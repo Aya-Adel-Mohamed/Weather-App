@@ -4,7 +4,7 @@ const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 const months =["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 async function getLocation(finalRes){
-    let res= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=895a8691170e44098bc175839221410&q=${finalRes}&days=3`)
+    let res= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=5f13558ee9334bdcb5974622222910&q=${finalRes}&days=3`)
     if(res.status == 200){
     let finalRes=await res.json();
     console.log(finalRes.location)
